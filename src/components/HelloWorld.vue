@@ -28,7 +28,7 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
 
-    <IconList
+    <IconGrid
       :items="[{width: 6, image: require('@/assets/codewars.png'), link: 'https://www.codewars.com/users/Mrchazaaa'},
                {width: 6, image: require('@/assets/codeacademy.jpg'), link: 'https://www.codecademy.com/users/Mrchazaaa/achievements'},
                {width: 12, image: require('@/assets/IET-bursary.jpg')}]"
@@ -37,12 +37,12 @@
 </template>
 
 <script>
-  import IconList from "./IconList.vue";
+  import IconGrid from "./IconGrid.vue";
 
   export default {
     name: 'HelloWorld',
     components: {
-      IconList,
+      IconGrid,
     },
     props: {
       msg: String

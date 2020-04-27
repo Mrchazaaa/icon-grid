@@ -1,5 +1,5 @@
 <template>
-  <div id="icon-list" :style="'grid-template-columns: repeat(' + rowWidth + ', 1fr);' + 'background-color: black;'">
+  <div id="icon-grid" :style="'grid-template-columns: repeat(' + rowWidth + ', 1fr);' + 'background-color: black;'">
     <FloatingIcon 
       v-for="item in items" 
       :key="item.image"
@@ -14,7 +14,7 @@
   import FloatingIcon from "./FloatingIcon.vue";
 
   export default {
-    name: "IconList",
+    name: "IconGrid",
     props: {
       items: {
         type: Array,
@@ -33,7 +33,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-  #icon-list {
+  #icon-grid {
     width: 100%;
     display: grid;
     grid-template-rows: 200px;

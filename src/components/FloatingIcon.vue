@@ -48,6 +48,5 @@
     justify-content: center;
     transition: 0.5s;
     box-sizing: border-box;
-    // height: 200px !important;
   }
 </style>
