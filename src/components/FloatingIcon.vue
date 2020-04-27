@@ -2,7 +2,7 @@
   <div v-if="href == null" class="floating-container" :style="'height: ' + height + 'px;'">
     <img :src="image"/>
   </div>
-  <div v-else class="floating-container">
+  <div v-else class="floating-container" :style="'height: ' + height + 'px;'">
     <a :href="href">
       <img :src="image"/>
     </a>
@@ -30,6 +30,7 @@
 <style lang="scss" scoped>
   a {
     height: 100%;
+    width: 100%;
   }
   img {
     transition: 0.5s;

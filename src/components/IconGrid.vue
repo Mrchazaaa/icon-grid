@@ -1,5 +1,5 @@
 <template>
-  <div id="icon-grid" :style="'grid-template-columns: repeat(' + rowWidth + ', 1fr);' + 'background-color: black;'">
+  <div id="icon-grid" :style="'grid-template-columns: repeat(' + rowWidth + ', 1fr);'">
     <FloatingIcon 
       v-for="item in items" 
       :key="item.image"
@@ -36,7 +36,7 @@
   #icon-grid {
     width: 100%;
     display: grid;
-    grid-template-rows: 200px;
+    // grid-template-rows: 200px;
   }
 </style>
 
